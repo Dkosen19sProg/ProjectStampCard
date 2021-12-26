@@ -6,4 +6,4 @@
 2/3プロトタイプ，α，β完成目標
 
 
-dddabcdefaaa
+dddabcdefaaabbb
