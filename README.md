@@ -4,4 +4,4 @@
 テスト入力
 
 2/3プロトタイプ，α，β完成目標
-somethings omg
+somethings omgn
