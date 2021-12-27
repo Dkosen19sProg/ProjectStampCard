@@ -2,7 +2,7 @@
 
 // キャッシュ名とキャッシュファイルの指定
 const CACHE_NAME = "pwa-sample-caches";
-// const urlsToCache = ["./", "./css/style.css", "./drawer.js"];
+const urlsToCache = ["./"];
 
 // インストール処理
 self.addEventListener("install", function (event) {
