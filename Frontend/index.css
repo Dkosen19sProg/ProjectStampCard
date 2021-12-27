@@ -1,0 +1,43 @@
+body {
+    background-color: #fef2f7;
+}
+
+footer{
+    margin:0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    background-color:#f16705;
+    display: flex;
+    width: 100%;
+    height:  14vmin;
+    z-index: 10;
+    position: fixed;
+}
+
+.footer-buttons-area{
+    position: relative;
+    bottom:15vmin;
+    margin: 0 auto;
+    width: 90%;
+    height:30vmin;
+    display: flex;
+}
+
+.circle-button-under-layer{
+    margin: auto;
+    width: 30%;
+    max-width: 25vmin;
+    height: 100%;
+    max-height: 25vmin;
+    border-radius: 50%;
+    background-color: #faaa31;
+}
+
+.circle-button-upper-layer{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #fef2f7;
+
+}
