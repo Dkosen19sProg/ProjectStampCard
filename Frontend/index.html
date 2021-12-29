@@ -9,6 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./body.css">
     <link rel="stylesheet" href="./Header/Header.css">
+    <link rel="stylesheet" href="./Main/Main.css">
     <link rel="stylesheet" href="./Footer/Footer.css">
     <title>Stampカード</title>
     <script type="text/javascript" src="./pwa.js"></script>
@@ -16,9 +17,33 @@
 
 <body>
 
-    <header></header>
+    <header>
+        <div class="HeaderItemArea">
+            <img class="SettingButton" src="./Header/IconPictures/Icooon Mono-Settings-64px.png">
+            <form class="SearchArea" action="" method="get">
+                <input class="SearchTypePlace" type="search"/>
+                <img class="SearchButtom" src="./Header/IconPictures/Icooon Mono-Search-64px.png">
+            </form>
+            <img class="AddButton" src="./Header/IconPictures/iconmonstr-Plus-64px.png">
+        </div>
+    </header>
+
+
     <main>
         <?php include('databaseTest.php')?>
+        <details>
+            <summary>お気に入り</summary>
+            <p class="TextInTab">岡田工務店</p>
+            <p class="TextInTab">鯖専門店 MACKEREL</p>
+        </details>
+        <details>
+            <summary>登録店</summary>
+            <p class="TextInTab">岡田工務店</p>
+            <p class="TextInTab">鯖専門店 MACKEREL</p>
+            <p class="TextInTab">めん処 ファイヤー麺</p>
+            <p class="TextInTab">和食 故郷</p>
+            <p class="TextInTab">Obama Fried Chicken</p>
+        </details>
     </main>
 
     <footer>
@@ -29,18 +54,21 @@
                     <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon">
                 </div>
             </div>
+
             <!--QR button-->
             <div class="CircleButtonUnderLayer">
                 <div class="CircleButtonUpperLayer">
                     <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon">
                 </div>
             </div>
+
             <!--map button-->
             <div class="CircleButtonUnderLayer">
                 <div class="CircleButtonUpperLayer">
                     <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon">
                 </div>
             </div>
+
         </div>
     </footer>
 </body>
