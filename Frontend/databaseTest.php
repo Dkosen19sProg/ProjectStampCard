@@ -1,5 +1,12 @@
 <?php
 
+function console_log($data)
+{
+    echo '<script>';
+    echo 'console.log(' . json_encode($data) . ')';
+    echo '</script>';
+}
+
 // $pdo = new PDO('mysql:host=localhost;dbname=foo_db', 'user', 'pass');
 
 // $pdo->query('CREATE TABLE foo_table (id INT, name VARCHAR(20))');
@@ -22,6 +29,19 @@ $link = mysqli_connect('localhost', 'root', 'd3pro2group6', 'shop');
 if (mysqli_connect_errno()) {
     die("データベースに接続できません:" . mysqli_connect_error() . "\n");
 } else {
-    echo "データベースの接続に成功しました。\n";
+    echo "console.log('データベースの接続に成功しました。\n')";
 }
-?>
+// $user = mysqli_real_escape_string($link, $user);
+// // $user をエスケープしたので、このクエリは正しく動作します
+// if (mysqli_query($link, "INSERT INTO user (name) VALUES ('$user')")) {
+//     $num = mysqli_affected_rows($link);
+//     console_log("$num 行をINSERTしました。\n");
+// }
+$query = "UPDATE user SET id = 2, name = 'yamato' WHERE id = 1;";
+
+if (mysqli_query($link, $query)) {
+    console_log("UPDATE に成功しました \n");
+}
+
+// 接続を閉じます
+mysqli_close($link);
