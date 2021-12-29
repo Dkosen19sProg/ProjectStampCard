@@ -43,5 +43,14 @@ if (mysqli_query($link, $query)) {
     console_log("UPDATE に成功しました \n");
 }
 
+$query = "SELECT id, name FROM user;";
+
+if ($result = mysqli_query($link, $query)) {
+    console_log("SELECT に成功しました。\n");
+    foreach ($result as $row) {
+        var_dump($row);
+    }
+}
+
 // 接続を閉じます
 mysqli_close($link);
