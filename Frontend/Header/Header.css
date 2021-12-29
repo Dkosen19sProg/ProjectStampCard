@@ -10,6 +10,40 @@ header {
     position: fixed;
 }
 
-.SearchFormArea{
-    
+.HeaderItemArea{
+    height: 50%;
+    top: 8vmin;
+    margin: auto 0 0 0;
+    position: relative;
+    display: flex;
+}
+
+.SettingButton{
+    /*im starting to think i dont need this*/
+    /*これいらなくね?*/
+    height: 100%;
+    width: auto;
+}
+
+.SearchArea{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3vmin;
+    background-color: #f7e6bb;
+
+}
+
+.SearchTypePlace{
+    padding:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.SearchButtom{
+    height: 8vmin;
+    width: auto;
+}
+
+.AddButton{
+
 }
