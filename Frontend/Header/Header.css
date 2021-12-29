@@ -1,28 +1,26 @@
 header {
     margin: 0;
-    padding: 0;
+    padding: 0 0 2px 0;
     top: 0;
     left: 0;
-    background-color: blue;/*change this color later 後で色変える*/
     width: 100%;
     height: 16vmin;
     z-index: 10;
     position: fixed;
+    background-color: #fef2f7;
 }
 
 .HeaderItemArea{
     height: 50%;
     top: 8vmin;
-    margin: auto 0 0 0;
     position: relative;
     display: flex;
 }
 
 .SettingButton{
-    /*im starting to think i dont need this*/
-    /*これいらなくね?*/
-    height: 100%;
-    width: auto;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .SearchArea{
@@ -30,20 +28,32 @@ header {
     padding-right: 10px;
     border-radius: 3vmin;
     background-color: #f7e6bb;
-
+    width: 60%;
 }
 
 .SearchTypePlace{
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
+    border: 0;
     padding:0;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+.SearchTypePlace:focus{
+    border-color: none;
+    outline: 0;
 }
 
 .SearchButtom{
-    height: 8vmin;
+    float: right;
+    height: 6vmin;
     width: auto;
+    position: relative;
+    top:15%;
 }
 
 .AddButton{
-
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
