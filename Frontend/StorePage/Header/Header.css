@@ -1,0 +1,44 @@
+header {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: blue;/*change this color later 後で色変える*/
+    width: 100%;
+    height: 16vmin;
+    z-index: 10;
+    position: fixed;
+    border-bottom-color: #f16705;
+    border-bottom-style: solid;
+    border-bottom-width: 1vmin;
+}
+
+.HeaderItemArea{
+    height: 50%;
+    top: 6vmin;
+    position: relative;
+    display: flex;
+}
+
+.GoBack{
+    margin-left: 5vmin;
+    padding: 3px;
+    width: auto;
+}
+
+.StoreName{
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    height: 100%;
+    margin-left: 3vmin;
+    font-size: 4vmin;
+    color: aliceblue;
+}
+
+.StoreMenu{
+    margin-right: 5vmin;
+    margin-left: auto;
+    padding: 3px;
+    width: auto;
+    float: right;
+}
