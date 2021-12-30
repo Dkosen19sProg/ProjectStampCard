@@ -36,7 +36,7 @@ if (mysqli_connect_errno()) {
 
 // }
 
-$query = "SELECT id, name FROM RegisteredShops;";
+$query = "SELECT id, shopName FROM RegisteredShops;";
 
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
@@ -45,16 +45,7 @@ if ($result = mysqli_query($link, $query)) {
     }
 }
 
-$query = "SELECT id, name FROM RegisteredCustomers;";
-
-if ($result = mysqli_query($link, $query)) {
-    console_log("SELECT に成功しました。\n");
-    foreach ($result as $row) {
-        var_dump($row);
-    }
-}
-
-$query = "SELECT id, name FROM StampCards;";
+$query = "SELECT id, cardKey FROM StampCards;";
 
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
