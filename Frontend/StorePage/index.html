@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="./Header/Header.css">
     <title>岡田工務店</title>
     <script type="text/javascript" src="./pwa.js"></script>
+    <script type="text/javascript" src="./Header/Link.js"></script>
 </head>
 
 <body>
 
     <header>
         <div class="HeaderItemArea">
-            <a href="../Home/index.html" class="HeaderItem">
+            <div onclick="goBack()" class="HeaderItem">
                 <img src="./Header/HeaderImages/Icooon Mono-GoBack-64px.png" class="GoBack">
-            </a>
+            </div>
             <p class="StoreName">岡田工務店</p><!--store name 店舗名-->
             <img src="./Header/HeaderImages/Icooon Mono-Menu-64px.png" class="StoreMenu">
         </div>

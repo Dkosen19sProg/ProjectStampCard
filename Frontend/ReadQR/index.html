@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./Footer/Footer.css">
     <title>QR Code Page</title>
     <script type="text/javascript" src="./pwa.js"></script>
+    <script type="text/javascript" src="./Footer/Link.js"></script>
 </head>
 
 <body>
@@ -26,31 +27,31 @@
     <footer>
         <div class="FooterButtonArea">
             <!--home button-->
-            <a href="../Home/index.html" class="FooterButton">
-                <div class="CircleButtonUnderLayer" id="HomeLink">
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="homeLink()">
                     <div class="CircleButtonUpperLayer">
                         <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon">
                     </div>
                 </div>
-            </a>
+            </div>
 
             <!--QR button-->
-            <a href="../ReadQR/index.html" class="FooterButton">
-                <div class="CircleButtonUnderLayer" id="QRLink">
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="qrLink()">
                     <div class="CircleButtonUpperLayer">
                         <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon">
                     </div>
                 </div>
-            </a>
+            </div>
             
             <!--map button-->
-            <a href="#" class="FooterButton">
-                <div class="CircleButtonUnderLayer" id="MapLink">
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="mapLink()">
                     <div class="CircleButtonUpperLayer">
                         <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon">
                     </div>
                 </div>
-            </a>
+            </div>
             
         </div>
     </footer>
