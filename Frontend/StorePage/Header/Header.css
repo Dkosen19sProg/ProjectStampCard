@@ -20,9 +20,14 @@ header {
     display: flex;
 }
 
+.HeaderItem{
+    height: 100%;
+    width: auto;
+}
+
 .GoBack{
     margin-left: 5vmin;
-    padding: 3px;
+    height: 100%;
     width: auto;
 }
 
@@ -30,7 +35,7 @@ header {
     margin-top: 2vmin;
     margin-bottom: 2vmin;
     height: 100%;
-    margin-left: 3vmin;
+    margin-left: 5vmin;
     font-size: 4vmin;
     color: aliceblue;
 }

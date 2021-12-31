@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Footer/Footer.css">
     <title>Stampカード</title>
     <script type="text/javascript" src="./pwa.js"></script>
+    <script type="text/javascript" src="./Footer/Link.js"></script><!--mac trying-->
 </head>
 
 <body>
@@ -49,25 +50,31 @@
     <footer>
         <div class="FooterButtonArea">
             <!--home button-->
-            <div class="CircleButtonUnderLayer">
-                <div class="CircleButtonUpperLayer">
-                    <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon">
+            <a href="../Home/index.html" class="FooterButton">
+                <div class="CircleButtonUnderLayer" id="HomeLink">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon">
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!--QR button-->
-            <div class="CircleButtonUnderLayer">
-                <div class="CircleButtonUpperLayer">
-                    <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon">
+            <a href="../ReadQR/index.html" class="FooterButton">
+                <div class="CircleButtonUnderLayer" id="QRLink">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon">
+                    </div>
                 </div>
-            </div>
-
+            </a>
+            
             <!--map button-->
-            <div class="CircleButtonUnderLayer">
-                <div class="CircleButtonUpperLayer">
-                    <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon">
+            <a href="#" class="FooterButton">
+                <div class="CircleButtonUnderLayer" id="MapLink">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon">
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </footer>
