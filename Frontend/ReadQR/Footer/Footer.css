@@ -9,7 +9,7 @@
         z-index: 10;
         position: fixed;
     }
-
+    
     .FooterButtonArea {
         position: relative;
         bottom: 10vmin;
@@ -36,7 +36,7 @@
         border-radius: 50%;
         background-color: #faaa31;
     }
-
+    
     .CircleButtonUpperLayer {
         position: absolute;
         width: 90%;
@@ -49,7 +49,7 @@
         margin: 0;
         position: relative;
     }
-
+    
     .HomeButtonIcon {
         position: absolute;
         top: 45%;
