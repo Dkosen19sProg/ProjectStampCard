@@ -35,7 +35,7 @@ if (mysqli_connect_errno()) {
 // }else {
 
 // }
-
+console_log("店舗出力");
 $query = "SELECT id, shopName FROM RegisteredShops;";
 
 if ($result = mysqli_query($link, $query)) {
@@ -44,7 +44,7 @@ if ($result = mysqli_query($link, $query)) {
         console_log($row);
     }
 }
-
+console_log("ユーザー出力");
 $query = "SELECT id, name, pass, createdDate FROM RegisteredCustomers;";
 
 if ($result = mysqli_query($link, $query)) {
@@ -53,8 +53,17 @@ if ($result = mysqli_query($link, $query)) {
         console_log($row);
     }
 }
-
+console_log("カード出力");
 $query = "SELECT id, cardKey, stampCounts FROM StampCards;";
+
+if ($result = mysqli_query($link, $query)) {
+    console_log("SELECT に成功しました。\n");
+    foreach ($result as $row) {
+        console_log($row);
+    }
+}
+console_log("inner join 出力");
+$query = "select stampCards.id,shopName,name,stampCounts,stampGoal from StampCards inner join RegisteredShops on StampCards.cardStoreId = RegisteredShops.id inner join RegisteredCustomers on StampCards.cardOwnerId = RegisteredCustomers.id;";
 
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
