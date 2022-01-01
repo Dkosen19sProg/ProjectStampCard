@@ -7,7 +7,7 @@ function console_log($data)
     echo '</script>';
 }
 
-$link = mysqli_connect('localhost', 'root', 'd3pro2group6', 'shop');
+$link = mysqli_connect('localhost', 'group6', 'd3pro2group6', 'stamp');
 
 // 接続状況をチェックします
 if (mysqli_connect_errno()) {
@@ -22,21 +22,30 @@ if (mysqli_connect_errno()) {
 //     console_log("UPDATE に成功しました \n");
 // }
 
-$query = "INSERT INTO user (name) VALUES ('manekineko');";
+// $query = "INSERT INTO user (name) VALUES ('manekineko');";
 
-if (mysqli_query($link, $query)) {
-    console_log("INSERT に成功しました。\n");
+// if (mysqli_query($link, $query)) {
+//     console_log("INSERT に成功しました。\n");
+// }
+
+// $query = "DELETE FROM user WHERE id IS NULL;";
+
+// if (mysqli_query($link, $query)) {
+//     console_log("DELETE に成功しました。\n");
+// }else {
+
+// }
+
+$query = "SELECT id, shopName FROM RegisteredShops;";
+
+if ($result = mysqli_query($link, $query)) {
+    console_log("SELECT に成功しました。\n");
+    foreach ($result as $row) {
+        var_dump($row);
+    }
 }
 
-$query = "DELETE FROM user WHERE id IS NULL;";
-
-if (mysqli_query($link, $query)) {
-    console_log("DELETE に成功しました。\n");
-}else {
-
-}
-
-$query = "SELECT id, name FROM user;";
+$query = "SELECT id, cardKey FROM StampCards;";
 
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
