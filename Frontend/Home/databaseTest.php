@@ -13,7 +13,7 @@ $link = mysqli_connect('localhost', 'group6', 'd3pro2group6', 'stamp');
 if (mysqli_connect_errno()) {
     die("データベースに接続できません:" . mysqli_connect_error() . "\n");
 } else {
-    echo "console.log('データベースの接続に成功しました。\n')";
+    console_log("データベースの接続に成功しました。\n");
 }
 
 // $query = "UPDATE user SET id = 2, name = 'yamato' WHERE id = 1;";
@@ -41,16 +41,25 @@ $query = "SELECT id, shopName FROM RegisteredShops;";
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
     foreach ($result as $row) {
-        var_dump($row);
+        console_log($row);
     }
 }
 
-$query = "SELECT id, cardKey FROM StampCards;";
+$query = "SELECT id, name, pass, createdDate FROM RegisteredCustomers;";
 
 if ($result = mysqli_query($link, $query)) {
     console_log("SELECT に成功しました。\n");
     foreach ($result as $row) {
-        var_dump($row);
+        console_log($row);
+    }
+}
+
+$query = "SELECT id, cardKey, stampCounts FROM StampCards;";
+
+if ($result = mysqli_query($link, $query)) {
+    console_log("SELECT に成功しました。\n");
+    foreach ($result as $row) {
+        console_log($row);
     }
 }
 
