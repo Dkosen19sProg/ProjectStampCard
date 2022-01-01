@@ -7,5 +7,5 @@ function qrLink(){
 }
 
 function mapLink(){
-    window.location.href = "../ReadQR/index.html";
+    window.location.href = "../Map/index.html";
 }
