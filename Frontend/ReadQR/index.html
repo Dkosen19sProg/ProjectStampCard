@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./Main/Main.css">
+    <link rel="stylesheet" href="./Footer/Footer.css">
+    <title>QR Code Page</title>
+    <script type="text/javascript" src="./pwa.js"></script>
+    <script type="text/javascript" src="./Footer/Link.js"></script>
+</head>
+
+<body>
+
+    <header></header>
+    <main>
+        <?php include('databaseTest.php')?>
+        <p>put in QR code</p>
+        <p>QRコード貼り付けろ</p>
+    </main>
+
+    <footer>
+        <div class="FooterButtonArea">
+            <!--home button-->
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="homeLink()">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon">
+                    </div>
+                </div>
+            </div>
+
+            <!--QR button-->
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="qrLink()">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon">
+                    </div>
+                </div>
+            </div>
+            
+            <!--map button-->
+            <div class="FooterButton">
+                <div class="CircleButtonUnderLayer" onclick="mapLink()">
+                    <div class="CircleButtonUpperLayer">
+                        <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+
+</html>

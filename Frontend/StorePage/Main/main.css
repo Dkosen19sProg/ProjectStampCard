@@ -1,0 +1,6 @@
+main{
+    margin-top: 18vmin;
+    background-color: aqua;/*仮色 tmp color*/
+    width: 100%;
+    height: calc(100vh - 20vmin);
+}

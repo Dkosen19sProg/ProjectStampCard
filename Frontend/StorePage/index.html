@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./Header/Header.css">
+    <title>岡田工務店</title>
+    <script type="text/javascript" src="./pwa.js"></script>
+    <script type="text/javascript" src="./Header/Link.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="HeaderItemArea">
+            <div onclick="goBack()" class="HeaderItem">
+                <img src="./Header/HeaderImages/Icooon Mono-GoBack-64px.png" class="GoBack">
+            </div>
+            <p class="StoreName">岡田工務店</p><!--store name 店舗名-->
+            <img src="./Header/HeaderImages/Icooon Mono-Menu-64px.png" class="StoreMenu">
+        </div>
+    </header>
+    <main>
+        <?php include('databaseTest.php')?>
+        <p>make it able to put in photo or any color</p>
+        <p>画像挿入可能にする</p>
+        <p>カード番号に対応した、自動生成ページ</p>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
