@@ -1,12 +1,23 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("./sw.js")
-    .then(function (registration) {
-      //登録完了
-      console.log("登録成功");
+// ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+
+// キャッシュ名とキャッシュファイルの指定
+const CACHE_NAME = "pwa-sample-caches";
+const urlsToCache = ["./", "./css/style.css", "./drawer.js"];
+
+// インストール処理
+self.addEventListener("install", function (event) {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(urlsToCache);
     })
-    .catch(function (err) {
-      //登録失敗
-      console.log("失敗");
-    });
-}
+  );
+});
+
+// リソースフェッチ時のキャッシュロード処理
+self.addEventListener("fetch", function (event) {
+  event.respondWith(
+    caches.match(event.request).then(function (response) {
+      return response ? response : fetch(event.request);
+    })
+  );
+});
