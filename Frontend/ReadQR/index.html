@@ -13,15 +13,15 @@
     <title>QR Code Page</title>
     <script type="text/javascript" src="./pwa.js"></script>
     <script type="text/javascript" src="./Footer/Link.js"></script>
+    <script type="text/javascript" src="../Home/js/qrcode.min.js"></script>
+    <script type="text/javascript" src="./Main/generateQR.js"></script>
 </head>
 
 <body>
 
     <header></header>
-    <main>
-        <?php include('databaseTest.php')?>
-        <p>put in QR code</p>
-        <p>QRコード貼り付けろ</p>
+    <main id="qr-space">
+        <div id="qrcode"></div>
     </main>
 
     <footer>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--map button-->
             <div class="FooterButton">
                 <div class="CircleButtonUnderLayer" onclick="mapLink()">
@@ -52,9 +52,31 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </footer>
 </body>
+<script type="text/javascript">
+    function resizeWindow(event) {
+        qrcode = QRCode(document.getElementById("qr-space"), {
+            text: "http://www.kobe-kosen.ac.jp/",
+            width: document.getElementById("qr-space").clientWidth,
+            height: document.getElementById("qr-space").clientHeight,
+            colorDark: "#000000",
+            colorLight: "transparent",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    }
+    let qrcode = new QRCode(document.getElementById("qr-space"), {
+        text: "http://www.kobe-kosen.ac.jp/",
+        width: document.getElementById("qr-space").clientWidth,
+        height: document.getElementById("qr-space").clientHeight,
+        colorDark: "#000000",
+        colorLight: "#FFFFFF",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    window.onresize = resizeWindow;
+</script>
 
 </html>
