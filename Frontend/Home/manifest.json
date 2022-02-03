@@ -1,16 +1,36 @@
 {
-    "name": "StampProject",
-    "short_name": "stamp",
-    "description": "スタンプカード",
-    "icons": [
-        {
-            "src": "android-chrome.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-    ],
-    "start_url": "index.html",
-    "display": "fullscreen",
-    "theme_color": "#dff0d8",
-    "background_color": "#dff0d8"
+  "theme_color": "#fef2f7",
+  "background_color": "#fef2f7",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./index.html",
+  "name": "StampProject",
+  "description": "スタンプカード",
+  "short_name": "stamp",
+  "icons": [
+    {
+      "src": "./fig/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./fig/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./fig/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./fig/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
