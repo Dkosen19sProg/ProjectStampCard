@@ -3,7 +3,7 @@ function homeLink(){
 }
 
 function qrLink(){
-    window.location.href = "../ReadQR/index.html";
+    window.location.href = "./ReadQR/index.html";
 }
 
 function mapLink(){
