@@ -20,8 +20,7 @@
 <body>
 
     <header></header>
-    <main id="qr-space" style="pointer-events: none; user-select: none;">
-        <video autoplay playsinline></video>
+    <main onload="openCamera();">
     </main>
 
     <footer>
@@ -56,27 +55,5 @@
         </div>
     </footer>
 </body>
-<script type="text/javascript">
-    function resizeWindow(event) {
-        qrcode = QRCode(document.getElementById("qr-space"), {
-            text: "http://www.kobe-kosen.ac.jp/",
-            width: document.getElementById("qr-space").clientWidth,
-            height: document.getElementById("qr-space").clientHeight,
-            colorDark: "#000000",
-            colorLight: "transparent",
-            correctLevel: QRCode.CorrectLevel.H
-        });
-    }
-    let qrcode = new QRCode(document.getElementById("qr-space"), {
-        text: "http://www.kobe-kosen.ac.jp/",
-        width: document.getElementById("qr-space").clientWidth,
-        height: document.getElementById("qr-space").clientHeight,
-        colorDark: "#000000",
-        colorLight: "#FFFFFF",
-        correctLevel: QRCode.CorrectLevel.H
-    });
-
-    window.onresize = resizeWindow;
-</script>
 
 </html>
