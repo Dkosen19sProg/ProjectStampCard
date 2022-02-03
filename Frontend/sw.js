@@ -2,7 +2,7 @@
 
 // キャッシュ名とキャッシュファイルの指定
 const CACHE_NAME = "pwa-sample-caches";
-const urlsToCache = ["./"];
+var urlsToCache = ['/index.html', '/js/camera.js'];
 
 // インストール処理
 self.addEventListener("install", function (event) {
