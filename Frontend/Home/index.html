@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./body.css">
     <link rel="stylesheet" href="./Header/Header.css">
     <link rel="stylesheet" href="./Main/Main.css">
+    <link rel="stylesheet" type="text/css" href="Main/Animation.css">
     <link rel="stylesheet" href="./Footer/Footer.css">
     <title>Stampカード</title>
 
@@ -19,7 +20,13 @@
 </head>
 
 <body>
-
+    <div id="splash">
+    <div id="splash-logo">
+        <img id="splash-logo-pic" src="./Main/AppLogoNoBackGroundColor.png">
+        Loading...
+    </div>
+    <!--/splash--></div>
+    <div id="container">
     <header>
         <div class="HeaderItemArea">
             <img class="SettingButton" src="./Header/IconPictures/Icooon Mono-Settings-64px.png">
@@ -80,6 +87,10 @@
 
         </div>
     </footer>
+    <!--/container--></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--自作のJS-->
+    <script src="./Main/Animation.js"></script>
 </body>
 
 </html>
