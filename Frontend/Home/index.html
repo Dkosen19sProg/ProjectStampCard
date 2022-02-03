@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,6 +42,7 @@
       media="print"
       onload="this.media='all'"
     />
+
     <title>Stampカード</title>
 
     <script defer type="text/javascript" src="./sw.js"></script>
@@ -48,7 +50,14 @@
     <meta name="theme-color" content="#fef2f7" />
   </head>
 
-  <body>
+<body>
+    <div id="splash">
+    <div id="splash-logo">
+        <img id="splash-logo-pic" src="./Main/AppLogoNoBackGroundColor.png">
+        Loading...
+    </div>
+    <!--/splash--></div>
+    <div id="container">
     <script>
       // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
       if ("serviceWorker" in navigator) {
@@ -65,7 +74,7 @@
           });
       }
     </script>
-
+      
     <header>
       <div class="HeaderItemArea">
         <img
@@ -142,5 +151,10 @@
         </div>
       </div>
     </footer>
-  </body>
+    <!--/container--></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--自作のJS-->
+    <script src="./Main/Animation.js"></script>
+</body>
+
 </html>
