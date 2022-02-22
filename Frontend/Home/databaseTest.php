@@ -11,6 +11,8 @@ $db_link = mysqli_connect('localhost', 'webstampcard', '8Ud8', 'webstampcard');
 // 接続状況をチェックします
 if (mysqli_connect_errno($db_link)) {
     die("データベースに接続できません:" . mysqli_connect_error() . "\n");
+    console_log("データベースに接続できません。\n");
+
 } else {
     console_log("データベースの接続に成功しました。\n");
 }
