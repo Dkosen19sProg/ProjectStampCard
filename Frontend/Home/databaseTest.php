@@ -7,7 +7,7 @@ function console_log($data)
     echo '</script>';
 }
 
-$db_link = mysqli_connect('localhost', 'webstampcard', '8Ud8', 'database_name');
+$db_link = mysqli_connect('localhost', 'webstampcard', '8Ud8', 'webstampcard');
 // 接続状況をチェックします
 if (mysqli_connect_errno($db_link)) {
     die("データベースに接続できません:" . mysqli_connect_error() . "\n");
