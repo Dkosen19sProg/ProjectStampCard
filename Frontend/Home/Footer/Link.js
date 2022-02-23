@@ -1,11 +1,11 @@
-function homeLink(){
-    window.location.href = "../Home/index.html";
+function homeLink() {
+    window.location.href = "../index.html";
 }
 
-function qrLink(){
+function qrLink() {
     window.location.href = "./ReadQR/index.html";
 }
 
-function mapLink(){
-    window.location.href = "../Map/index.html";
+function mapLink() {
+    window.location.href = "../../Map/index.html";
 }
