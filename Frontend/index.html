@@ -9,17 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <link rel="manifest" href="./ProjectStampCard.webmanifest" />
-    <link rel="stylesheet" href="./body.css" />
-    <link rel="stylesheet" href="./Header/Header.css" />
-    <link rel="stylesheet" href="./Main/Main.css" />
-    <link rel="stylesheet" type="text/css" href="Main/Animation.css" />
-    <link rel="stylesheet" href="./Footer/Footer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/Header.css" />
+    <link rel="stylesheet" type="text/css" href="/css/Footer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/Main.css" />
+    <link rel="stylesheet" type="text/css" href="./Main/Animation.css" />
     <link rel="apple-touch-icon" href="./fig/icon-192x192.png" />
 
     <title>Stampカード</title>
 
-    <script defer type="text/javascript" src="./sw.js"></script>
-    <script defer type="text/javascript" src="./Footer/Link.js"></script>
+    <script defer type="text/javascript" src="./js/sw.js"></script>
+    <script defer type="text/javascript" src="./js/Link.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -32,7 +31,6 @@
     </div>
     <div id="container">
         <script>
-            // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
             if ("serviceWorker" in navigator) {
                 navigator.serviceWorker
                     .register("./sw.js")
@@ -50,12 +48,12 @@
 
         <header>
             <div class="HeaderItemArea">
-                <img class="SettingButton" src="./Header/IconPictures/Icooon Mono-Settings-64px.png" alt="Settings Icon" />
-                <form class="SearchArea" action="" method="get">
-                    <input class="SearchTypePlace" type="search" />
-                    <img class="SearchButtom" src="./Header/IconPictures/Icooon Mono-Search-64px.png" alt="Search Icon" />
+                <img class="SettingButton" src="/Pictures/IconPictures/Icooon-Mono-Settings-64px.png" alt="Settings Icon " />
+                <form class="SearchArea" action=" " method="get ">
+                    <input class="SearchTypePlace" type="search " />
+                    <img class="SearchButtom" src="/Pictures/IconPictures/Icooon-Mono-Search-64px.png " alt="Search Icon " />
                 </form>
-                <img class="AddButton" src="./Header/IconPictures/iconmonstr-Plus-64px.png" alt="Add Icon" />
+                <img class="AddButton" src="/Pictures/IconPictures/iconmonstr-Plus-64px.png " alt="Add Icon " />
             </div>
         </header>
 
@@ -80,27 +78,27 @@
             <div class="FooterButtonArea">
                 <!--home button-->
                 <div class="FooterButton">
-                    <div class="CircleButtonUnderLayer" onclick="homeLink()">
+                    <div class="CircleButtonUnderLayer" onclick="homeLink() ">
                         <div class="CircleButtonUpperLayer">
-                            <img src="./Footer/IconPictures/Icooon Mono-Stamp-64px.png" class="HomeButtonIcon" alt="Home Icon" />
+                            <img src="/Pictures/IconPictures/Icooon-Mono-Stamp-64px.png " class="HomeButtonIcon" alt="Home Icon " />
                         </div>
                     </div>
                 </div>
 
                 <!--QR button-->
                 <div class="FooterButton">
-                    <div class="CircleButtonUnderLayer" onclick="qrLink()">
+                    <div class="CircleButtonUnderLayer" onclick="qrLink() ">
                         <div class="CircleButtonUpperLayer">
-                            <img src="./Footer/IconPictures/iconmonstr-QRcode-64px.png" class="QRCodeButtonIcon" alt="QR Icon" />
+                            <img src="/Pictures/IconPictures/iconmonstr-QRcode-64px.png " class="QRCodeButtonIcon" alt="QR Icon " />
                         </div>
                     </div>
                 </div>
 
                 <!--map button-->
                 <div class="FooterButton">
-                    <div class="CircleButtonUnderLayer" onclick="mapLink()">
+                    <div class="CircleButtonUnderLayer" onclick="mapLink() ">
                         <div class="CircleButtonUpperLayer">
-                            <img src="./Footer/IconPictures/Icooon Mono-Map-64px.png" class="MapButtonIcon" alt="Map Icon" />
+                            <img src="/Pictures/IconPictures/Icooon-Mono-Map-64px.png " class="MapButtonIcon" alt="Map Icon " />
                         </div>
                     </div>
                 </div>
@@ -109,7 +107,7 @@
         <!--/container-->
     </div>
     <!--自作のJS-->
-    <script src="./Main/Animation.js"></script>
+    <script src="./Main/Animation.js "></script>
 </body>
 
 </html>
