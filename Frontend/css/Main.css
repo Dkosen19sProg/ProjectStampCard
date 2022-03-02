@@ -1,11 +1,9 @@
 main {
     margin-top: 20vmin;
-    /*avoid header ヘッダー部を避けるため*/
     margin-bottom: 35vmin;
-    /*avoid footer フッダー部を避けるため*/
-    /*左右は雰囲気*/
     margin-right: 5vmin;
     margin-left: 5vmin;
+    width: 100%;
 }
 
 .TextInTab {
