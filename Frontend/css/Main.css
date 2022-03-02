@@ -1,11 +1,10 @@
 main {
-    margin-top: 20vmin;
-    margin-bottom: 35vmin;
-    margin-right: 5vmin;
-    margin-left: 5vmin;
-    width: 100%;
+  margin-top: 20vmin;
+  margin-bottom: 35vmin;
+  margin-right: 5vmin;
+  margin-left: 5vmin;
+  width: 100%;
 }
-
 .TextInTab {
-    margin-left: 5vmin;
+  margin-left: 5vmin;
 }

@@ -1,59 +1,52 @@
 header {
-    margin: 0;
-    padding: 0 0 2px 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 16vmin;
-    z-index: 10;
-    position: fixed;
-    background-color: #fef2f7;
+  margin: 0;
+  padding: 0 0 2px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16vmin;
+  z-index: 10;
+  position: fixed;
+  background-color: #fef2f7;
 }
-
 .HeaderItemArea {
-    height: 50%;
-    top: 8vmin;
-    position: relative;
-    display: flex;
+  height: 50%;
+  top: 8vmin;
+  position: relative;
+  display: flex;
 }
-
 .SettingButton {
-    padding: 3px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .SearchArea {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 3vmin;
-    background-color: #f7e6bb;
-    width: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3vmin;
+  background-color: #f7e6bb;
+  width: 60%;
 }
-
 .SearchTypePlace {
-    height: 100%;
-    width: 90%;
-    background-color: transparent;
-    border: 0;
-    padding: 0;
+  height: 100%;
+  width: 90%;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
 }
-
 .SearchTypePlace:focus {
-    border-color: none;
-    outline: 0;
+  border-color: none;
+  outline: 0;
 }
-
 .SearchButtom {
-    float: right;
-    height: 6vmin;
-    width: auto;
-    position: relative;
-    top: 15%;
+  float: right;
+  height: 6vmin;
+  width: auto;
+  position: relative;
+  top: 15%;
 }
-
 .AddButton {
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -15,9 +15,10 @@
     <link rel="stylesheet" type="text/css" href="/css/Footer.css" />
     <link rel="stylesheet" type="text/css" href="/css/Main.css" />
     <link rel="stylesheet" type="text/css" href="/css/Animation.css" />
-    <link rel="apple-touch-icon" href="/fig/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="/Pictures/PWAicon/icon-192x192.png" />
     <!-- ここは defer をつけないで -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/Animation.js"></script>
   </head>
   <body>
     <div id="splash">
@@ -25,7 +26,7 @@
         <img
           async
           id="splash-logo-pic"
-          src="/Main/AppLogoNoBackGroundColor.png"
+          src="/Pictures/AppLogoNoBackGroundColor.png"
         />
         Loading...
       </div>
@@ -38,22 +39,22 @@
             async
             class="SettingButton"
             src="/Pictures/IconPictures/Icooon-Mono-Settings-64px.png"
-            alt="Settings Icon "
+            alt="Settings Icon"
           />
-          <form class="SearchArea" action=" " method="get ">
-            <input class="SearchTypePlace" type="search " />
+          <form class="SearchArea" action="" method="get">
+            <input class="SearchTypePlace" type="search" />
             <img
               async
               class="SearchButtom"
-              src="/Pictures/IconPictures/Icooon-Mono-Search-64px.png "
-              alt="Search Icon "
+              src="/Pictures/IconPictures/Icooon-Mono-Search-64px.png"
+              alt="Search Icon"
             />
           </form>
           <img
             async
             class="AddButton"
-            src="/Pictures/IconPictures/iconmonstr-Plus-64px.png "
-            alt="Add Icon "
+            src="/Pictures/IconPictures/iconmonstr-Plus-64px.png"
+            alt="Add Icon"
           />
         </div>
       </header>
@@ -78,39 +79,39 @@
         <div class="FooterButtonArea">
           <!--home button-->
           <div class="FooterButton">
-            <div class="CircleButtonUnderLayer" onclick="homeLink() ">
+            <div class="CircleButtonUnderLayer" onclick="homeLink()">
               <div class="CircleButtonUpperLayer">
                 <img
                   async
-                  src="/Pictures/IconPictures/Icooon-Mono-Stamp-64px.png "
+                  src="/Pictures/IconPictures/Icooon-Mono-Stamp-64px.png"
                   class="HomeButtonIcon"
-                  alt="Home Icon "
+                  alt="Home Icon"
                 />
               </div>
             </div>
           </div>
           <!--QR button-->
           <div class="FooterButton">
-            <div class="CircleButtonUnderLayer" onclick="qrLink() ">
+            <div class="CircleButtonUnderLayer" onclick="qrLink()">
               <div class="CircleButtonUpperLayer">
                 <img
                   async
-                  src="/Pictures/IconPictures/iconmonstr-QRcode-64px.png "
+                  src="/Pictures/IconPictures/iconmonstr-QRcode-64px.png"
                   class="QRCodeButtonIcon"
-                  alt="QR Icon "
+                  alt="QR Icon"
                 />
               </div>
             </div>
           </div>
           <!--map button-->
           <div class="FooterButton">
-            <div class="CircleButtonUnderLayer" onclick="mapLink() ">
+            <div class="CircleButtonUnderLayer" onclick="mapLink()">
               <div class="CircleButtonUpperLayer">
                 <img
                   async
-                  src="/Pictures/IconPictures/Icooon-Mono-Map-64px.png "
+                  src="/Pictures/IconPictures/Icooon-Mono-Map-64px.png"
                   class="MapButtonIcon"
-                  alt="Map Icon "
+                  alt="Map Icon"
                 />
               </div>
             </div>
@@ -120,20 +121,19 @@
       <!--/container-->
     </div>
     <!--自作のJS-->
-    <script src="/Main/Animation.js "></script>
-    <script defer type="text/javascript" src="/js/sw.js"></script>
+    <script defer type="text/javascript" src="/sw.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/js/sw.js")
+          .register("/sw.js")
           .then(function (registration) {
             console.log(
-              "ServiceWorker registration successful with scope: ",
+              "ServiceWorker registration successful with scope:",
               registration.scope
             );
           })
           .catch(function (err) {
-            console.log("ServiceWorker registration failed: ", err);
+            console.log("ServiceWorker registration failed:", err);
           });
       }
     </script>

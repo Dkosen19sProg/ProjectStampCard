@@ -1,93 +1,86 @@
-    footer {
-        margin: 0;
-        padding: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #f16705;
-        width: 100%;
-        height: 16vmin;
-        z-index: 10;
-        position: fixed;
-    }
-    
-    .FooterButtonArea {
-        position: relative;
-        bottom: 10vmin;
-        margin: 0 auto;
-        width: 90%;
-        height: 30vmin;
-        display: flex;
-    }
-    
-    .FooterButton {
-        height: 100%;
-        width: 30%;
-        margin: auto;
-        z-index: 100;
-    }
-    
-    .CircleButtonUnderLayer {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        max-width: 25vmin;
-        height: 100%;
-        max-height: 25vmin;
-        border-radius: 50%;
-        background-color: #faaa31;
-    }
-    
-    .CircleButtonUpperLayer {
-        position: absolute;
-        width: 90%;
-        height: 90%;
-        border-radius: 50%;
-        background-color: #fef2f7;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        margin: 0;
-        position: relative;
-    }
-    
-    .HomeButtonIcon {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        margin: auto;
-        width: 60%;
-        height: 60%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-        -moz-transform: translateY(-50%) translateX(-50%);
-        -ms-transform: translateY(-50%) translateX(-50%);
-        -o-transform: translateY(-50%) translateX(-50%);
-    }
-    
-    .QRCodeButtonIcon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        margin: auto;
-        width: 50%;
-        height: 50%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-        -moz-transform: translateY(-50%) translateX(-50%);
-        -ms-transform: translateY(-50%) translateX(-50%);
-        -o-transform: translateY(-50%) translateX(-50%);
-    }
-    
-    .MapButtonIcon {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        margin: auto;
-        width: 60%;
-        height: 60%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-        -moz-transform: translateY(-50%) translateX(-50%);
-        -ms-transform: translateY(-50%) translateX(-50%);
-        -o-transform: translateY(-50%) translateX(-50%);
-    }
+footer {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f16705;
+  width: 100%;
+  height: 16vmin;
+  z-index: 10;
+  position: fixed;
+}
+.FooterButtonArea {
+  position: relative;
+  bottom: 10vmin;
+  margin: 0 auto;
+  width: 90%;
+  height: 30vmin;
+  display: flex;
+}
+.FooterButton {
+  height: 100%;
+  width: 30%;
+  margin: auto;
+  z-index: 100;
+}
+.CircleButtonUnderLayer {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 25vmin;
+  height: 100%;
+  max-height: 25vmin;
+  border-radius: 50%;
+  background-color: #faaa31;
+}
+.CircleButtonUpperLayer {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #fef2f7;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: 0;
+  position: relative;
+}
+.HomeButtonIcon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+}
+.QRCodeButtonIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+}
+.MapButtonIcon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+}

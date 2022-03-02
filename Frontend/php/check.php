@@ -1,17 +1,14 @@
 <?php
 require("./dbconnect.php");
 session_start();
-
 /* 会員登録の手続き以外のアクセスを飛ばす */
 if (!isset($_SESSION['join'])) {
     header('Location: entry.php');
     exit();
 }
-
 if (!empty($_POST['check'])) {
     // パスワードを暗号化
     $hash = password_hash($_SESSION['join']['password'], PASSWORD_BCRYPT);
-
     // 入力情報をデータベースに登録
     $statement = $db->prepare("INSERT INTO members SET name=?, email=?, password=?");
     $statement->execute(array(
@@ -19,7 +16,6 @@ if (!empty($_POST['check'])) {
         $_SESSION['join']['email'],
         $hash
     )); // ここを変更する
-
     unset($_SESSION['join']);   // セッションを破棄
     header('Location: thank.php');   // thank.phpへ移動
     exit();
@@ -44,17 +40,14 @@ if (!empty($_POST['check'])) {
                 <p class="error">＊会員登録に失敗しました。</p>
             <?php endif ?>
             <hr>
-
             <div class="control">
                 <p>ニックネーム</p>
                 <p><span class="fas fa-angle-double-right"></span> <span class="check-info"><?php echo htmlspecialchars($_SESSION['join']['name'], ENT_QUOTES); ?></span></p>
             </div>
-
             <div class="control">
                 <p>メールアドレス</p>
                 <p><span class="fas fa-angle-double-right"></span> <span class="check-info"><?php echo htmlspecialchars($_SESSION['join']['email'], ENT_QUOTES); ?></span></p>
             </div>
-            
             <br>
             <a href="entry.php" class="back-btn">変更する</a>
             <button type="submit" class="btn next-btn">登録する</button>
