@@ -11,8 +11,6 @@ $shopid = 2;
 
 $counts = 0;
 
-$result_num = 0;
-
 function console_log($data)
 {
     echo '<script>';
@@ -39,16 +37,6 @@ if ($result = mysqli_query($link, $query)) {
 }
 
 if ($q){
-    $query = "SELECT * FROM RegisteredShops WHERE id =" . $shopid . ";";
-    
-    if ($result = mysqli_query($link, $query)) {
-        console_log("SELECT WHERE id に成功しました。\n");
-        foreach ($result as $row) {
-            console_log($row);
-            $num = $row['grantStamps'];
-            $goal_num = $row['stampGoal'];
-        }
-    }
 
     $query = "SELECT * FROM StampCards WHERE cardStoreId =" . $shopid . " AND cardOwnerId =" . $userid . ";";
     
@@ -59,14 +47,7 @@ if ($q){
             $counts = $row['stampCounts'];
         }
     }
-
-    $query = "UPDATE StampCards SET stampCounts = " . $counts + $num . " WHERE cardStoreId =" . $shopid . " AND cardOwnerId =" . $userid . ";";
-    
-    if ($result = mysqli_query($link, $query)) {
-        console_log("UPDATE に成功しました。\n");
-        $result_num = $counts + $num;
-    }
 }
 
-console_log($key);
+console_log($counts);
 
