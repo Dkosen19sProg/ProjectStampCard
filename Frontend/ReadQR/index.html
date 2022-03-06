@@ -21,6 +21,8 @@
 
     <header></header>
     <main id="qr-space" style="pointer-events: none; user-select: none;">
+        <?php include('sql-get.php')?>
+        <?php $f = 124; ?>
     </main>
 
     <footer>
@@ -56,18 +58,8 @@
     </footer>
 </body>
 <script type="text/javascript">
-    function resizeWindow(event) {
-        qrcode = QRCode(document.getElementById("qr-space"), {
-            text: "http://www.kobe-kosen.ac.jp/",
-            width: document.getElementById("qr-space").clientWidth,
-            height: document.getElementById("qr-space").clientHeight,
-            colorDark: "#000000",
-            colorLight: "transparent",
-            correctLevel: QRCode.CorrectLevel.H
-        });
-    }
     let qrcode = new QRCode(document.getElementById("qr-space"), {
-        text: "http://www.kobe-kosen.ac.jp/",
+        text: '<?php echo $key; ?>',
         width: document.getElementById("qr-space").clientWidth,
         height: document.getElementById("qr-space").clientHeight,
         colorDark: "#000000",
@@ -75,7 +67,6 @@
         correctLevel: QRCode.CorrectLevel.H
     });
 
-    window.onresize = resizeWindow;
 </script>
 
 </html>

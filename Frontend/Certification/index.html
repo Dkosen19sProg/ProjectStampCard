@@ -13,19 +13,14 @@
     <title>QR Code Page</title>
     <script type="text/javascript" src="./pwa.js"></script>
     <script type="text/javascript" src="./Footer/Link.js"></script>
-    <script type="text/javascript" src="../js/qrcode.min.js"></script>
-    <script type="text/javascript" src="./Main/generateQR.js"></script>
 </head>
 
 <body>
 
-    <header>
-    </header>
+    <header></header>
     <main id="qr-space" style="pointer-events: none; user-select: none;">
-        <?php include('sql-get.php')
-            $f = 124;
-        ?>
-        <video autoplay playsinline></video>
+        <?php include('sql-get.php')?>
+        <?php $f = 124; ?>
     </main>
 
     <footer>
@@ -60,20 +55,10 @@
         </div>
     </footer>
 </body>
-
-
 <script type="text/javascript">
-
-    let qrcode = new QRCode(document.getElementById("qr-space"), {
-        text: <?php echo $f; ?>,
-        width: document.getElementById("qr-space").clientWidth,
-        height: document.getElementById("qr-space").clientHeight,
-        colorDark: "#000000",
-        colorLight: "#FFFFFF",
-        correctLevel: QRCode.CorrectLevel.H
-    });
-
-    window.onresize = resizeWindow;
+    if (Boolean(<?php echo $q; ?>)){
+        console.log("認証完了");
+    }
 </script>
 
 </html>
